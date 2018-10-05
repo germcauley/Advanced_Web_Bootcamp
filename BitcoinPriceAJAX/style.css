@@ -1,3 +1,31 @@
 span {
     color:green;
   }
+
+.btn{
+  margin: 5px;
+  }  
+#main{
+  height: 100%;
+  background-image: url(https://picsum.photos/1000/1000/?random);
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  
+}
+  h1{
+    text-align: center;
+  }
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  }
+.flex-buttons{
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}  
+
+.requestbtn{
+  margin: auto;
+}
