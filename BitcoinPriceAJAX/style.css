@@ -1,5 +1,5 @@
 span {
-    color:green;
+    color: #007bff;
   }
 
 .btn{
@@ -7,7 +7,7 @@ span {
   }  
 #main{
   height: 100%;
-  background-image: url(https://picsum.photos/1000/1000/?random);
+  background-image: url(https://images.unsplash.com/photo-1534256009774-91785b13a331?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9&s=6a9a82015f4a7fc7022c7e01d9ca9fe8);
   background-size: cover;
   background-repeat: no-repeat;
   
@@ -15,6 +15,7 @@ span {
 }
   h1{
     text-align: center;
+    font-family: 'Diplomata SC', cursive;
   }
 .flex-container {
   display: flex;
