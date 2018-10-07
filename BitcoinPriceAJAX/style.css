@@ -1,30 +1,39 @@
 span {
     color: #007bff;
+    font-size: 30px;
   }
 
 .btn{
   margin: 5px;
+  
   }  
 #main{
   height: 100%;
-  background-image: url(https://images.unsplash.com/photo-1534256009774-91785b13a331?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9&s=6a9a82015f4a7fc7022c7e01d9ca9fe8);
-  background-size: cover;
-  background-repeat: no-repeat;
+  width: 100%;
+  background-image: url(https://www.desireeburch.com/wp-content/uploads/2014/10/bokeh-lights-sunset-city.jpg); 
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
   
   
 }
   h1{
+    color:white;
     text-align: center;
-    font-family: 'Diplomata SC', cursive;
+    
   }
 .flex-container {
+  font-size: 80px;
   display: flex;
   flex-direction: column;
+  text-align: center;
+  padding-top:50px;
   }
 .flex-buttons{
   display: flex;
   flex-direction: row;
   margin: auto;
+  
 }  
 
 .requestbtn{

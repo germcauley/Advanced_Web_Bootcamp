@@ -10,10 +10,10 @@
 
 
   
-  btn.addEventListener("click", function(){
-    //make request
-    makeRequest();
-  });
+  // btn.addEventListener("click", function(){
+  //   //make request
+  //   makeRequest();
+  // });
   eur.addEventListener("click", function(){
     //make request
     makeEURRequest();
