@@ -2,20 +2,15 @@ var btn = document.querySelector("button");
 btn.addEventListener("click", function(){
   var url = 'https://randomuser.me/api/';
   fetch(url)
-  .then(handleErrors)
-  .then(function(request){
-    console.log("EVERYTHING IS FINE!");
-    console.log(request);
-  })
-  .then(updateProfile)
-  .catch(function(error){
-    console.log(error);
-  });
+    .then(function(res){
+        return res.json();
+    })
+    .then(function(data){
+        var fullname = data.results[0].name.first;
+        console.log(fullname);
+        
+    })
+    .catch(function(err){
+        console.log(err);
+    });
 });
-
-function handleErrors (request){
-  if(!request.ok) {
-    throw Error(request.status);
-  }
-  return request;
-}
