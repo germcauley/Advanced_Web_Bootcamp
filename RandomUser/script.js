@@ -17,7 +17,7 @@ btn.addEventListener("click", function(){
         var usernametxt = data.results[0].login.username;
         var emailtxt = data.results[0].email;
         var citytxt = data.results[0].location.city;
-        var pic = data.results[0].picture.thumbnail;
+        var pic = data.results[0].picture.medium;
         console.log(firstname);
         console.log(lastname);
         console.log(username);
