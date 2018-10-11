@@ -1,7 +1,9 @@
 
 # Advanced_Web_Bootcamp
 
-Advanced Web Developer Bootcamp Projects
+Miscellaneous Advanced Web Developer Projects
+
+Following text is from a template so dont bother reading :)
 
 ## Getting Started
 
