@@ -1,22 +1,3 @@
-//forEach
-
-// function forEach(array, callback){
-//     for(var i =0; i < array.length; i++){
-//         callback(array[i],i,array);
-//     }
-// }
-
-function halfArr (arr){
-    newArr =[]
-    arr.forEach(function(val){
-        newArr.push(val/2);
-    })
-    console.log(newArr);
-}
-
-halfArr([2,6,8]);
-
-
 
 /*
 Write a function called doubleValues which accepts an array and returns a new array with all the values in the array passed to the function doubled
@@ -43,6 +24,7 @@ Examples:
 
 */
 function onlyEvenValues(arr){
+    newArr=[];
     arr.forEach(function(val){
         if(val %2 === 0){
             newArr.push(val);   
@@ -60,15 +42,11 @@ Examples:
 
 */
 function showFirstAndLast(arr){
-    newArr=[];
+    var newArr=[];
     arr.forEach(function(val){
-        word = val.Split("");
-        word.forEach(function(value,index){
-            if(index ===0 || index == (value.length-1)){
-               newArr.push() ;
-            }
-        });
+        newArr.push(val[0] + val[val.length-1]);  
     });
+    return newArr;
 }
 
 /*
@@ -81,7 +59,10 @@ Examples:
 
 */
 function addKeyAndValue(arr,key,value){
-    
+    arr.forEach(function(val){
+        val[key] = value;
+    });
+    return arr;
 }
 
 /*
@@ -95,5 +76,17 @@ Examples:
     vowelCount('I Am awesome and so are you') // {i: 1, a: 4, e: 3, o: 3, u: 1};
 */
 function vowelCount(str){
-   
+   var splitArr = str.split("");
+   var obj = {};
+   var vowels = "aeiou";
+   splitArr.forEach(function(letter){
+       if(vowels.indexOf(letter.toLowerCase()) !==-1){
+            if(letter in object){
+                obj[letter] ++;
+            }else{
+                obj[letter] =1;
+            }
+       }
+   });
+   return obj;
 }
