@@ -9,7 +9,8 @@ function filter(arr,callback){
 }
 
 /*
-Write a function called filterByValue which accepts an array of objects 
+Write a function called filterByValue which 
+accepts an array of objects 
 and a key and returns a new array with
  all the objects that contain that key.
 
@@ -19,7 +20,7 @@ Examples:
 
 function filterByValue(arr, key){
     return arr.filter(function(value){
-        return value[key];
+        return value[key] !==undefined;
     });
 }
 
@@ -36,29 +37,34 @@ Examples:
 */
 
 function find(arr, searchValue){
-    arr.filter(function(val){
-        if(val == searchValue){
-            return arr[val];   
-        } 
-        else{
-            return undefined;
-        }
-    })
+    return arr.filter(function(val){
+       return val===searchValue;
+    })[0];
 }
 
 /*
-Write a function called findInObj which accepts an array of objects, a key, and some value to search for and returns the first found value in the arrayt.
+Write a function called findInObj 
+which accepts an array of objects, 
+a key, and some value to search 
+for and returns the first found value in the arrayt.
 
 Examples:
     findInObj([{first: 'Elie', last:"Schoppik"}, {first: 'Tim', last:"Garcia", isCatOwner: true}, {first: 'Matt', last:"Lane"}, {first: 'Colt', last:"Steele", isCatOwner: true}], 'isCatOwner',true) // {first: 'Tim', last:"Garcia", isCatOwner: true}
 */
 
 function findInObj(arr, key, searchValue){
-    
+    return arr.filter(function(val){
+        if(val[key]===searchValue)
+            return val;
+    })[0];
 }
 
 /*
-Write a function called removeVowels which accepts a string and returns a new string with all of the vowels (both uppercased and lowercased) removed. Every character in the new string should be lowercased.
+Write a function called removeVowels which
+ accepts a string and returns a new string 
+ with all of the vowels 
+ (both uppercased and lowercased) removed. 
+ Every character in the new string should be lowercased.
 
 Examples:
     removeVowels('Elie') // ('l')
@@ -67,11 +73,22 @@ Examples:
 */
 
 function removeVowels(str){
-    
+    var splitStr = str.split("")
+    var vowels = "aeiou";
+    return splitStr.filter(function(val){
+        if(vowels.indexOf(val.toLowerCase()) == -1){
+            return val;
+        }
+    })
 }
 
 /*
-Write a function called doubleOddNumbers which accepts an array and returns a new array with all of the odd numbers doubled (HINT - you can use map and fitler to double and then filter the odd numbers).
+Write a function called doubleOddNumbers 
+which accepts an array and
+ returns a new array with all
+  of the odd numbers doubled 
+  (HINT - you can use map and fitler 
+    to double and then filter the odd numbers).
 
 Examples:
     doubleOddNumbers([1,2,3,4,5]) // [2,6,10]
@@ -79,5 +96,9 @@ Examples:
 */
 
 function doubleOddNumbers(arr){
-    
+    return arr.filter(function(val){
+        return val % 2 !==0;
+    }).map(function(val){
+        return val*2;
+    });
 }
