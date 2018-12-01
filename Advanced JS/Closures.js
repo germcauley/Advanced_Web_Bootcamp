@@ -21,6 +21,7 @@ function specialMultiply(a,b){
             return a*b;
         }
     }
+    return a *b;
 }
 
 /* 
@@ -71,17 +72,25 @@ Examples (yours might not
 */
 
 function guessingGame(amount){
+    var answer = Math.floor(Math.random()*11);
+    var guesses = 0;
+    var completed =false;
     return function(guess){
-        var answer = Math.random(11);
-        var guesses = 0;
-        if(guess == answer){
-             return "You got it!!!";
+        if(!completed){
+            guesses++
+            if(guess === answer){
+                completed = true;
+                return "You got it!"
+            }
+            else if (guess > anser) return "Your guess is too high!"
+            else if (guess < answer) return "Your guess is too low!"
+            else if(guesses === amount){
+                completed = true
+                return "No more guess the anser was " + answer;
+            }
         }
-        else if(guess > answer){
-            return "Your guess is too high";
-        }
-        else{
-            return "Your guess is too low";
-        }
+        return "All done playing, Well done!"
     }
 }
+
+console.log(guessingGame(5));
