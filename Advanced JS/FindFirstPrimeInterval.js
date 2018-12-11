@@ -31,7 +31,7 @@
 //Get all prime number between two given values inclusive
 //Get all of these numbers with a given interval between them
 
-function getPrime(start,finish){
+function gap(gap,start,finish){
     var newArr=[];
     //get all numbers in given range
     for(var i =start; i <=finish; i ++){
@@ -40,31 +40,32 @@ function getPrime(start,finish){
         }
         
     }
-    
     function isPrime(num) {
         for(var i = 2; i < num; i++)
           if(num % i === 0) return false;
         return num !== 1 && num !== 0;
       }
-    
-      
-
     function findInterval(array,num){
         var ans =[]
         for(var i =0; i <=array.length; i++){
-            if((array[i+1]-array[i])== num){
-                        
-                ans.push([array[i+1],array[i]]); 
+            if((array[i+1]-array[i])== num){              
+                ans.push([array[i],array[i+1]]); 
             }
-            else{
-                
+            else{ 
+                return null      
             }
         }
-        return ans[0]; 
+        if(ans.length>0){
+            return ans[0]; 
+        }
+        else{
+            return null;
+        }
+        
     }
-    return findInterval(newArr,4)
+    return findInterval(newArr,gap)
 }
 
 
 
-console.log(getPrime(10,67));
+gap(2,100,110);
