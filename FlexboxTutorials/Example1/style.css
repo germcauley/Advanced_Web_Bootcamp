@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    border: 5px solid black;
+}
+
+.box{
+    font-size: 60px;
+    color: white;
+    text-align: center;
+}
+
+.box1{
+    
+    background-color: aqua;
+}
+.box2{
+    background-color: red;
+}
+.box3{
+    background-color: green;
+}
+.box4{
+    background-color: pink;
+}
+.box5{
+    background-color: blue;
+}
