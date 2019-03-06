@@ -2,14 +2,15 @@
     display: flex;
     border: 5px solid black;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    justify-content: center;
 }
 
 .box{
     font-size: 60px;
     color: white;
     text-align: center;
-    width:250px;
+    width:100px;
 }
 
 .box1{
