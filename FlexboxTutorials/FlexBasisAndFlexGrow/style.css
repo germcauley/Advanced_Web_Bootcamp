@@ -1,0 +1,57 @@
+.box{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    flex-basis: 100px;
+}
+
+.box1{
+    
+    background-color: orange;
+    flex-grow: 1;
+}
+.box2{
+    background-color: red;
+    flex-grow: 2;
+    
+}
+.box3{
+    background-color: green; order: 9;
+    flex-grow: 3;
+}
+.box4{
+    background-color: yellow;
+   
+}
+.box5{
+    background-color: blue;
+    
+}
+.box6{
+    
+    background-color: rgb(255, 94, 0);
+}
+.box7{
+    background-color: rgb(146, 51, 51); order: 3;
+    
+}
+.box8{
+    background-color: rgb(96, 230, 96);
+}
+.box9{
+    background-color: rgb(153, 153, 26);
+   
+}
+
+.container{
+    display: flex;
+    border: 10px solid black;
+    flex-direction: row;
+    height: 80vh;
+  
+    
+
+   
+
+}
