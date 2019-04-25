@@ -45,6 +45,8 @@ main {
     display: flex;
     /* flex-wrap: nowrap; */
     background-color: DodgerBlue;
+    justify-content: center;
+    align-items: center;
   }
 .mainContent {
     flex-direction: column ; 
@@ -58,7 +60,7 @@ main {
     line-height: 75px;
     flex-grow: 1;
     font-size: 30px;
-    justify-content: center;
+   
   }
 .moreContent > div {
     background-color: #f1f1f1;
