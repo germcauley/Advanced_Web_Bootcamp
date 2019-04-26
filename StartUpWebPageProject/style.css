@@ -44,7 +44,7 @@ main {
 .flex-container {
     display: flex;
     /* flex-wrap: nowrap; */
-    background-color: DodgerBlue;
+    background-color: rgb(151, 151, 151);
     justify-content: center;
     align-items: center;
   }
@@ -99,7 +99,7 @@ aside{
 }
 
 header, footer{
-    background: #1abc9c;
+    background: #ffffff;
     flex-basis: 100px;
 }
 
