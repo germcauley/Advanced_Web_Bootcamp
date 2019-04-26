@@ -3,7 +3,7 @@ body{
     margin: 0;
     flex-direction: column;
     background: #2c3e50;
-    font-family: Helvetica;
+    font-family: 'Times New Roman', Times, serif;
     min-height: 100vh;
 }
 
