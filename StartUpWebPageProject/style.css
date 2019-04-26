@@ -11,9 +11,11 @@ a{
     text-decoration: none;
     color:black;
 }
-
+ul{
+    list-style: none;
+}
 .Aleft{
-    flex-grow: 6;
+    flex-grow: 4;
 }
 
 .Aright{
@@ -64,12 +66,13 @@ main {
   }
 .moreContent > div {
     background-color: white;
-    width: 100px;
+    /* width: 100px; */
     margin: 10px;
     text-align: center;
     /* line-height: 75px; */
     flex-grow: 1;
     font-size: 18px;
+    /* justify-content: space-around; */
   }
 .fas{
     font-size: 60px;
@@ -104,6 +107,19 @@ header, footer{
     flex-basis: 100px;
 }
 
+.mcdiv{
+    display: flex; 
+    flex-direction: row; 
+    margin-right: 10%;
+     margin-left: 10%;
+}
+.mcdivcontent{
+    display: flex;
+     align-items: center;
+      padding:5%;
+       color: rgba(252, 164, 0, 0.966);
+}
+
 @media all and (max-width:640px){
     main{
         flex-direction: column;
@@ -117,6 +133,9 @@ header, footer{
     }
     #icon{
         display: none;
+    }
+    .lists{
+       width:100%;
     }
     
 }
