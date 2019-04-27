@@ -3,13 +3,17 @@ body{
     margin: 0;
     flex-direction: column;
     background: #2c3e50;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Special Elite', cursive;
     min-height: 100vh;
 }
 
 a{
     text-decoration: none;
     color:black;
+    font-size: 25px;
+}
+a:hover{
+    font-weight: bold;
 }
 ul{
     list-style: none;
@@ -22,12 +26,6 @@ ul{
     flex-grow: 1;
 }
 
-
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 main > *, header, footer{
     margin: 4px;
     padding:5px;
@@ -45,7 +43,6 @@ main {
 
 .flex-container {
     display: flex;
-    /* flex-wrap: nowrap; */
     background-color: white;
     justify-content: center;
     align-items: center;
@@ -56,23 +53,17 @@ main {
 }  
 .mainContent > div {
     background-color: white;
-    /* width: 100px; */
     margin: 10px;
-    /* text-align: center; */
-    /* line-height: 75px; */
     flex-grow: 1;
     font-size: 18px;
    
   }
 .moreContent > div {
     background-color: white;
-    /* width: 100px; */
     margin: 10px;
     text-align: center;
-    /* line-height: 75px; */
     flex-grow: 1;
     font-size: 18px;
-    /* justify-content: space-around; */
   }
 .fas{
     font-size: 60px;
@@ -83,10 +74,10 @@ article{
    
 }
 
-nav{
-    flex: 1 1 20%;
-    background: #00c3d1;
-    order: -1;
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
 }
 h2{
@@ -121,13 +112,14 @@ header, footer{
 }
 
 @media all and (max-width:640px){
+    #nav{
+        flex-direction: column;
+    }
     main{
         flex-direction: column;
         flex-grow: 1; 
     }
-    nav{
-        order: 0;
-    }
+   
     .moreContent{
         flex-direction: column;
     }
@@ -136,6 +128,7 @@ header, footer{
     }
     .lists{
        width:100%;
+       margin:
     }
     
 }
