@@ -84,6 +84,7 @@ article{
 h2{
     justify-content: left;
     margin-bottom: 0px;
+    
 }
 p{
     margin-top: 0px;
@@ -97,6 +98,10 @@ aside{
 header, footer{
     background: white;
     flex-basis: 100px;
+}
+
+footer{
+    background:#ecf0f1;
 }
 
 .mcdiv{
@@ -129,7 +134,7 @@ header, footer{
     }
     .lists{
        width:100%;
-       margin:
+       
     }
     
 }
