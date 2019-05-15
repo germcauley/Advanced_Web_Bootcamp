@@ -22,7 +22,7 @@ ul{
     flex-grow: 4;
 }
 
-.nav-link{
+.Aright{
     flex-grow: 1;
 }
 
@@ -84,6 +84,7 @@ article{
 h2{
     justify-content: left;
     margin-bottom: 0px;
+    
 }
 p{
     margin-top: 0px;
@@ -99,6 +100,10 @@ header, footer{
     flex-basis: 100px;
 }
 
+footer{
+    background:#ecf0f1;
+}
+
 .mcdiv{
     display: flex; 
     flex-direction: row; 
@@ -110,6 +115,13 @@ header, footer{
      align-items: center;
       padding:5%;
        color: rgba(252, 164, 0, 0.966);
+}
+.vid{
+    flex-grow: 1
+}
+.vidmain{
+    padding:20px;
+    flex-grow: 2
 }
 
 @media all and (max-width:640px){
