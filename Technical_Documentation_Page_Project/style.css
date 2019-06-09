@@ -18,11 +18,14 @@
 
 }
 header{
-    font-size: 20px;
+    font-size: 40px;
     font-weight: bold;
+    min-height: 10%;
+    text-align: center
 }
-  li{
-      min-height: 10%;
+li{
+      min-height: 8%;
+      text-align: center;
       list-style: none;
       border: 1px solid black;
       margin-bottom: 1px;
@@ -33,7 +36,7 @@ header{
       margin:0;
       padding:0;
   }
-  ul,li { list-style-type: none;
+ul,li { list-style-type: none;
     list-style-position:inside;
     margin:0;
     padding:0; }
@@ -48,6 +51,12 @@ header{
 
 div{
     min-height: 30%;
+}
+
+.main-li{
+    list-style: square;
+    border: none;
+    font-size: 15px;
 }
 
 
