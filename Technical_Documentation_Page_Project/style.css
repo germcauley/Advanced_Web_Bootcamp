@@ -17,13 +17,26 @@
     border-color: rgba(0, 22, 22, 0.4);
 
 }
+header{
+    font-size: 20px;
+    font-weight: bold;
+}
   li{
       min-height: 10%;
       list-style: none;
       border: 1px solid black;
       margin-bottom: 1px;
       font-size: 20px;
+      width: 100%;
+      list-style-type: none;
+      list-style-position:inside;
+      margin:0;
+      padding:0;
   }
+  ul,li { list-style-type: none;
+    list-style-position:inside;
+    margin:0;
+    padding:0; }
 
 #main-doc{
     border: 3px black solid;
