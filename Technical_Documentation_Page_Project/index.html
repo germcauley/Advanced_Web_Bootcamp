@@ -1,128 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <script src="script.js"></script>
 
     <title>Document</title>
-  </head>
+</head>
 
-  <body class="container">
+<body id="main-doc class=" container">
     <nav id="navbar">
-      <header>SideNav</header>
-      <ul style="height: 100%; overflow: auto">
-        <li><a>Introduction</a></li>
-        <li><a>What you should already know</a></li>
-        <li><a>JavaScript and Java</a></li>
-        <li><a>Hello world</a></li>
-        <li><a>Variables</a></li>
-        <li><a>Declaring variables</a></li>
-        <li><a>Variable scope</a></li>
-        <li><a>Global variables</a></li>
-        <li><a>Constants</a></li>
-        <li><a>Data types</a></li>
-        <li><a>if...else statement</a></li>
-        <li><a>while statement</a></li>
-        <li><a>Function declarations</a></li>
-        <li><a>Reference</a></li>
-      </ul>
+        <header>JS Documentation</header>
+        <ul style="height: 100%; overflow: auto">
+            <a href="#Introduction">
+                <li>Introduction</li>
+            </a>
+            <a href="#WhatYouShould">
+                <li>What you should already know</li>
+            </a>
+            <li><a href="#Javascript">JavaScript and Java</a></li>
+            <li><a href="#HelloWorld">Hello world</a></li>
+            <li><a href="#Variables">Variables</a></li>
+            <li><a href="#Declaring">Declaring variables</a></li>
+            <li><a href="#Scope">Variable scope</a></li>
+            <li><a href="#Global">Global variables</a></li>
+            <li><a href="#Constants">Constants</a></li>
+            <li><a href="#Data">Data types</a></li>
+            <li><a href="#If">if...else statement</a></li>
+            <li><a href="#While">while statement</a></li>
+            <li><a href="#Function">Function declarations</a></li>
+            <li><a href="#Ref">Reference</a></li>
+        </ul>
     </nav>
     <main id="main-doc">
-      <ul>
-        <section>
-          <h1>Introduction</h1>
-          <p>
-            JavaScript is a cross-platform, object-oriented scripting language.
-            It is a small and lightweight language. Inside a host environment
-            (for example, a web browser), JavaScript can be connected to the
-            objects of its environment to provide programmatic control over
-            them.
-          </p>
-          <p>
-            JavaScript contains a standard library of objects, such as Array,
-            Date, and Math, and a core set of language elements such as
-            operators, control structures, and statements. Core JavaScript can
-            be extended for a variety of purposes by supplementing it with
-            additional objects; for example:
-          </p>
-        </section>
-        <section>
-          <h1>What you should already know</h1>
-          <p>
-            This guide assumes you have the following basic background:
-          </p>
-          <ul>
-            <li class="main-li">
-              A general understanding of the Internet and the World Wide Web
-              (WWW).
-            </li>
-            <li class="main-li">Good working knowledge of HyperText Markup Language (HTML).</li>
-            <li class="main-li">
-              Some programming experience. If you are new to programming, try
-              one of the tutorials linked on the main page about JavaScript.
-            </li>
-          </ul>
-        </section>
-        <section>
-          <h1>JavaScript and Java</h1>
-          <p>
-            avaScript and Java are similar in some ways but fundamentally
-            different in some others. The JavaScript language resembles Java but
-            does not have Java's static typing and strong type checking.
-            JavaScript follows most Java expression syntax, naming conventions
-            and basic control-flow constructs which was the reason why it was
-            renamed from LiveScript to JavaScript.
-          </p>
-          <p>
-            In contrast to Java's compile-time system of classes built by
-            declarations, JavaScript supports a runtime system based on a small
-            number of data types representing numeric, Boolean, and string
-            values. JavaScript has a prototype-based object model instead of the
-            more common class-based object model. The prototype-based model
-            provides dynamic inheritance; that is, what is inherited can vary
-            for individual objects. JavaScript also supports functions without
-            any special declarative requirements. Functions can be properties of
-            objects, executing as loosely typed methods.
-          </p>
-          <p>
-                JavaScript is a very free-form language compared to Java. 
-                You do not have to declare all variables, classes, and methods. 
-                You do not have to be concerned with whether methods are public, private, 
-                or protected, and you do not have to implement interfaces. 
-                Variables, parameters, and function return types are not explicitly typed. 
-          </p>
-        </section>
-        <section>
-          <h1>Hello world</h1>
-          <p>
-                To get started with writing JavaScript, 
-                open the Scratchpad and write your first 
-                "Hello world" JavaScript code: 
-          </p>
-          <p></p>
-          <p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser! </p>
-        </section>
-        <section>
-          <h1>Variables</h1>
-          <p>
-            This guide assumes you have the following basic background:
-          </p>
-          <p></p>
-        </section>
-        <section>
-          <h1>What you should already know</h1>
-          <p>
-            This guide assumes you have the following basic background:
-          </p>
-          <p></p>
-        </section>
+        <ul>
+            <section class="main-section">
+                <h1 id="Introduction">Introduction</h1>
+                <p>
+                    JavaScript is a cross-platform, object-oriented scripting language.
+                    It is a small and lightweight language. Inside a host environment
+                    (for example, a web browser), JavaScript can be connected to the
+                    objects of its environment to provide programmatic control over
+                    them.
+                </p>
+                <p>
+                    JavaScript contains a standard library of objects, such as Array,
+                    Date, and Math, and a core set of language elements such as
+                    operators, control structures, and statements. Core JavaScript can
+                    be extended for a variety of purposes by supplementing it with
+                    additional objects; for example:
+                </p>
+            </section>
+            <section class="main-section">
+                <h1 id="WhatYouShould">What you should already know</h1>
+                <p>
+                    This guide assumes you have the following basic background:
+                </p>
+                <ul>
+                    <li class="main-li">
+                        A general understanding of the Internet and the World Wide Web
+                        (WWW).
+                    </li>
+                    <li class="main-li">Good working knowledge of HyperText Markup Language (HTML).</li>
+                    <li class="main-li">
+                        Some programming experience. If you are new to programming, try
+                        one of the tutorials linked on the main page about JavaScript.
+                    </li>
+                </ul>
+            </section>
+            <section class="main-section">
+                <h1 id="Javascript">JavaScript and Java</h1>
+                <p>
+                    avaScript and Java are similar in some ways but fundamentally
+                    different in some others. The JavaScript language resembles Java but
+                    does not have Java's static typing and strong type checking.
+                    JavaScript follows most Java expression syntax, naming conventions
+                    and basic control-flow constructs which was the reason why it was
+                    renamed from LiveScript to JavaScript.
+                </p>
+                <p>
+                    In contrast to Java's compile-time system of classes built by
+                    declarations, JavaScript supports a runtime system based on a small
+                    number of data types representing numeric, Boolean, and string
+                    values. JavaScript has a prototype-based object model instead of the
+                    more common class-based object model. The prototype-based model
+                    provides dynamic inheritance; that is, what is inherited can vary
+                    for individual objects. JavaScript also supports functions without
+                    any special declarative requirements. Functions can be properties of
+                    objects, executing as loosely typed methods.
+                </p>
+                <p>
+                    JavaScript is a very free-form language compared to Java.
+                    You do not have to declare all variables, classes, and methods.
+                    You do not have to be concerned with whether methods are public, private,
+                    or protected, and you do not have to implement interfaces.
+                    Variables, parameters, and function return types are not explicitly typed.
+                </p>
+            </section>
+            <section class="main-section">
+                <h1 id="HelloWorld">Hello world</h1>
+                <p>
+                    To get started with writing JavaScript,
+                    open the Scratchpad and write your first
+                    "Hello world" JavaScript code:
+                </p>
+                <p></p>
+                <p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser! </p>
+            </section>
+            <section class="main-section">
+                <h1 id="Variables">Variables</h1>
+                <p>
+                    This guide assumes you have the following basic background:
+                </p>
+                <p></p>
+            </section>
+            <section class="main-section">
+                <h1 id="Declaring">Declaring variables</h1>
+                <p>
+                    This guide assumes you have the following basic background:
+                </p>
+                <p></p>
+            </section>
+            <section class="main-section">
+                <h1 id="Scope">Variable scope</h1>
+                <p>
+                    You can declare a variable in three ways:
+                </p>
+                <p></p>
+            </section>
+            <section class="main-section">
+                <h1>Global variables</h1>
+                <p>
+                    Global variables are in fact properties of the global object. In web pages the global object is
+                    window,
+                    so you can set and access global variables using the window.variable syntax.
+                </p>
+                <p></p>
+            </section>
+            <section class="main-section">
+                <h1>Constants</h1>
+                <p>
+                    You can create a read-only, named constant with the const keyword.
+                    The syntax of a constant identifier is the same as for a variable identifier:
+                    it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or
+                    underscore characters.
+                </p>
+                <p>
+                    <code>
+                            const PI = 3.14;
+                    </code>
+                </p>
+                <p>
+                    A constant cannot change value through assignment or be re-declared while the script is running.
+                    It has to be initialized to a value.
+                </p>
+                <p>
+                    The scope rules for constants are the same as those for let block scope variables.
+                    If the const keyword is omitted, the identifier is assumed to represent a variable.
+                </p>
+                <p>
+                    You cannot declare a constant with the same name as a function or variable in the same scope. For
+                    example:
+                </p>
+                <p>
+                    <code>
+                            // THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS WILL
+                            CAUSE AN ERROR ALSO function f() { const g = 5; var g; //statements
+                            }
+                    </code>
+                </p>
+                <p>
+                    However, object attributes are not protected, so the following statement is executed without
+                    problems.
+                </p>
+                <p>
+                    <code>
+                            const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = "otherValue";
+                    </code>
+                </p>
+            </section>
+            <section class="main-section">
+                <h1>Data types</h1>
+                <p>
+                    This guide assumes you have the following basic background:
+                </p>
+                <p></p>
+            </section>
+            <section class="main-section">
+                <h1>if...else statement</h1>
+                <p>
+                    Use the if statement to execute a statement if a logical condition is true.
+                    Use the optional else clause to execute a statement if the condition is false.
+                    An if statement looks as follows:
+                </p>
+                <p>
+                    <code>
+                    if (condition) { statement_1; } else { statement_2; }
+                </code>
+                </p>
+                <p>
+                    condition can be any expression that evaluates to true or false.
+                    See Boolean for an explanation of what evaluates to true and false.
+                    If condition evaluates to true, statement_1 is executed; otherwise,
+                    statement_2 is executed. statement_1 and statement_2 can be any statement,
+                    including further nested if statements.
+                </p>
+                <p>
+                    You may also compound the statements using else if to have multiple conditions tested in sequence,
+                    as follows:
+                </p>
+                <p>
+                    <code>
+                        if (condition_1) { statement_1; } else if (condition_2) { statement_2;
+                        } else if (condition_n) { statement_n; } else { statement_last; }
+                </code>
+                </p>
+            </section>
+            <section class="main-section">
+                <h1>while statement</h1>
+                <p>
+                    This guide assumes you have the following basic background:
+                </p>
+                <p></p>
+            </section>
+            <section class="main-section">
+                <h1>Function declarations</h1>
+                <p>
+                    This guide assumes you have the following basic background:
+                </p>
+                <p>
+                    <code>
+                    function square(number) { return number * number; }
+                </code>
+                </p>
+            </section>
 
-        <div>BBBBB</div>
-        <div>CCCCC</div>
-      </ul>
+        </ul>
     </main>
-  </body>
+</body>
+
 </html>
